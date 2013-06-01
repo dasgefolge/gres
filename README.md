@@ -3,7 +3,7 @@
 Version
 =======
 
-This version of `gres` is from early development and does not define an API. Release versions of `gres` will use [Semantic Versioning][].
+`gres` uses [Semantic Versioning][]. This is version 0.1.0 of `gres`. The public API is defined by docstrings in the main module (gres.py) and modules imported from there.
 
 [Progress]: http://fenhl.net/gres/ (Fenhl: Progress)
 [Semantic Versioning]: http://semver.org/ (Semantic Versioning)
