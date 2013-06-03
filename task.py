@@ -14,3 +14,23 @@ class Task:
         This method always returns 0.0 and subclasses should usually override it.
         """
         return 0.0
+
+class Checkbox(Task):
+    """
+    This class represents checkbox tasks: These tasks can be either checked (completed) or unchecked.
+    """
+    def __init__(self, title, checked=False):
+        super().__init__(self, title)
+        self.checked = checked
+    
+    def check(self, checked=True):
+        """
+        Checks the task (or unchecks if checked == False).
+        """
+        self.checked = checked
+    
+    def progress(self):
+        """
+        Returns 1.0 if the checkbox is checked, and 0.0 otherwise.
+        """
+        return 1.0 if self.checked else 0.0
